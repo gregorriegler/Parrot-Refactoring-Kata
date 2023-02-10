@@ -23,10 +23,6 @@ public class ParrotImpl implements Parrot {
         };
     }
 
-    protected double appleSauce() {
-        return Math.max(0, Parrot.BASE_SPEED - getLoadFactor() * numberOfCoconuts);
-    }
-
     protected double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * Parrot.BASE_SPEED);
     }
