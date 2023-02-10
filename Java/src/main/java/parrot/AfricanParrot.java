@@ -9,10 +9,6 @@ public class AfricanParrot implements Parrot{
         this.numberOfCoconuts = numberOfCoconuts;
     }
 
-    static AfricanParrot createAfricanParrot(int numberOfCoconuts) {
-        return new AfricanParrot(numberOfCoconuts);
-    }
-
     @Override
     public double getSpeed() {
         return Math.max(0, Parrot.BASE_SPEED - LOAD_FACTOR * numberOfCoconuts);
