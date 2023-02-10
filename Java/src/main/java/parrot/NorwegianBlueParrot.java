@@ -14,10 +14,7 @@ public class NorwegianBlueParrot implements Parrot {
 
     @Override
     public double getSpeed() {
-        return switch (type) {
-            case NORWEGIAN_BLUE -> (isNailed) ? 0 : getBaseSpeed(voltage);
-            default -> throw new IllegalArgumentException();
-        };
+        return (isNailed) ? 0 : getBaseSpeed(voltage);
     }
 
     protected double getBaseSpeed(double voltage) {
