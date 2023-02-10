@@ -17,7 +17,6 @@ public class ParrotImpl implements Parrot {
     @Override
     public double getSpeed() {
         return switch (type) {
-            case AFRICAN -> Math.max(0, Parrot.BASE_SPEED - getLoadFactor() * numberOfCoconuts);
             case NORWEGIAN_BLUE -> (isNailed) ? 0 : getBaseSpeed(voltage);
             default -> throw new IllegalArgumentException();
         };
