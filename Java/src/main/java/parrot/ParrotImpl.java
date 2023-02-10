@@ -2,10 +2,10 @@ package parrot;
 
 public class ParrotImpl implements Parrot {
 
-    private final ParrotTypeEnum type;
-    private final int numberOfCoconuts;
-    private final double voltage;
-    private final boolean isNailed;
+    protected final ParrotTypeEnum type;
+    protected final int numberOfCoconuts;
+    protected final double voltage;
+    protected final boolean isNailed;
 
     public ParrotImpl(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         this.type = type;
@@ -23,15 +23,15 @@ public class ParrotImpl implements Parrot {
         };
     }
 
-    private double appleSauce() {
+    protected double appleSauce() {
         return Math.max(0, Parrot.BASE_SPEED - getLoadFactor() * numberOfCoconuts);
     }
 
-    private double getBaseSpeed(double voltage) {
+    protected double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * Parrot.BASE_SPEED);
     }
 
-    private double getLoadFactor() {
+    protected double getLoadFactor() {
         return 9.0;
     }
 
