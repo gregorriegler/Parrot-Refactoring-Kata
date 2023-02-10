@@ -6,8 +6,8 @@ public class NorwegianBlueParrot implements Parrot {
     protected final double voltage;
     protected final boolean isNailed;
 
-    public NorwegianBlueParrot(ParrotTypeEnum type, double voltage, boolean isNailed) {
-        this.type = type;
+    public NorwegianBlueParrot(double voltage, boolean isNailed) {
+        this.type = ParrotTypeEnum.NORWEGIAN_BLUE;
         this.voltage = voltage;
         this.isNailed = isNailed;
     }
