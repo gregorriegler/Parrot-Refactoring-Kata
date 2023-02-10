@@ -9,7 +9,7 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfEuropeanParrot() {
-        Parrot parrot = Parrot.createEuropean();
+        Parrot parrot = EuropeanParrot.createEuropean();
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
