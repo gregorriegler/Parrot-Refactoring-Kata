@@ -2,7 +2,7 @@ package parrot;
 
 public class AfricanParrot extends ParrotImpl{
 
-    public static final double LOAD_FACTOR = 9.0;
+    private static final double LOAD_FACTOR = 9.0;
     private final int numberOfCoconuts;
 
     public AfricanParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
