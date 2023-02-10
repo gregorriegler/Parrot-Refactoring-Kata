@@ -19,7 +19,7 @@ public class ParrotTest {
         assertEquals(3.0, parrot.getSpeed(), 0.0);
     }
 
-    private ParrotImpl createAfricanParrot(int numberOfCoconuts) {
+    private static ParrotImpl createAfricanParrot(int numberOfCoconuts) {
         return new ParrotImpl(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
     }
 
