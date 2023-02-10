@@ -1,9 +1,6 @@
 package parrot;
 
 public class EuropeanParrot implements Parrot {
-    static Parrot create() {
-        return new EuropeanParrot();
-    }
 
     public EuropeanParrot() {
     }
