@@ -5,7 +5,7 @@ public class EuropeanParrot implements Parrot {
         return new EuropeanParrot();
     }
 
-    private EuropeanParrot() {
+    public EuropeanParrot() {
     }
 
     @Override
