@@ -7,6 +7,6 @@ public class EuropeanParrot implements Parrot {
 
     @Override
     public double getSpeed() {
-        return 12.0;
+        return BASE_SPEED;
     }
 }
