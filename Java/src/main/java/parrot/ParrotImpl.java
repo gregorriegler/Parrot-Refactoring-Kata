@@ -26,8 +26,4 @@ public class ParrotImpl implements Parrot {
         return Math.min(24.0, voltage * Parrot.BASE_SPEED);
     }
 
-    protected double getLoadFactor() {
-        return 9.0;
-    }
-
 }
