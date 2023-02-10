@@ -3,13 +3,11 @@ package parrot;
 public class ParrotImpl implements Parrot {
 
     protected final ParrotTypeEnum type;
-    protected final int numberOfCoconuts;
     protected final double voltage;
     protected final boolean isNailed;
 
-    public ParrotImpl(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
+    public ParrotImpl(ParrotTypeEnum type, double voltage, boolean isNailed) {
         this.type = type;
-        this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
         this.isNailed = isNailed;
     }
