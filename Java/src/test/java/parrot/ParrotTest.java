@@ -13,7 +13,8 @@ public class ParrotTest {
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
-    private Parrot createEuropean() {
+    private static
+    Parrot createEuropean() {
         return new Parrot(ParrotTypeEnum.EUROPEAN, 0, 0, false);
     }
 
