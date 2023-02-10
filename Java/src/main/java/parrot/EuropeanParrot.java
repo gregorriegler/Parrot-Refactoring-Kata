@@ -1,6 +1,6 @@
 package parrot;
 
-public class EuropeanParrot implements Parrot {
+public class EuropeanParrot extends Parrot {
 
     public EuropeanParrot() {
     }
