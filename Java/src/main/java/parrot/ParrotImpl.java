@@ -31,8 +31,4 @@ public class ParrotImpl implements Parrot {
         return 9.0;
     }
 
-    private double getBaseSpeed() {
-        return Parrot.BASE_SPEED;
-    }
-
 }
