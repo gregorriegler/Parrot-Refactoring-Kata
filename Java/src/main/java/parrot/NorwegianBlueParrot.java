@@ -15,7 +15,7 @@ public class NorwegianBlueParrot implements Parrot {
         return (isNailed) ? 0 : getBaseSpeed(voltage);
     }
 
-    protected double getBaseSpeed(double voltage) {
+    private double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * Parrot.BASE_SPEED);
     }
 
