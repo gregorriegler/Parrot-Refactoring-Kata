@@ -2,8 +2,8 @@ package parrot;
 
 public class NorwegianBlueParrot implements Parrot {
 
-    protected final double voltage;
-    protected final boolean isNailed;
+    private final double voltage;
+    private final boolean isNailed;
 
     public NorwegianBlueParrot(double voltage, boolean isNailed) {
         this.voltage = voltage;
