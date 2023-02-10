@@ -1,12 +1,12 @@
 package parrot;
 
-public class ParrotImpl implements Parrot {
+public class NorwegianBlueParrot implements Parrot {
 
     protected final ParrotTypeEnum type;
     protected final double voltage;
     protected final boolean isNailed;
 
-    public ParrotImpl(ParrotTypeEnum type, double voltage, boolean isNailed) {
+    public NorwegianBlueParrot(ParrotTypeEnum type, double voltage, boolean isNailed) {
         this.type = type;
         this.voltage = voltage;
         this.isNailed = isNailed;
