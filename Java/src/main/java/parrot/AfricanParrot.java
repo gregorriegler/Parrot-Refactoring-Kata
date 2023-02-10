@@ -6,7 +6,7 @@ public class AfricanParrot extends ParrotImpl{
     }
 
     static ParrotImpl createAfricanParrot(int numberOfCoconuts) {
-        return new ParrotImpl(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
+        return new AfricanParrot(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
     }
 
     @Override
