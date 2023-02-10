@@ -1,17 +1,16 @@
 package parrot;
 
-public class AfricanParrot extends ParrotImpl{
+public class AfricanParrot implements Parrot{
 
     private static final double LOAD_FACTOR = 9.0;
     private final int numberOfCoconuts;
 
-    public AfricanParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
-        super(type, voltage, isNailed);
+    public AfricanParrot(int numberOfCoconuts) {
         this.numberOfCoconuts = numberOfCoconuts;
     }
 
-    static ParrotImpl createAfricanParrot(int numberOfCoconuts) {
-        return new AfricanParrot(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
+    static AfricanParrot createAfricanParrot(int numberOfCoconuts) {
+        return new AfricanParrot(numberOfCoconuts);
     }
 
     @Override
