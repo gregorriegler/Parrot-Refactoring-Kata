@@ -15,23 +15,23 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfAfricanParrot_With_One_Coconut() {
-        Parrot parrot = createAfricanParrot();
+        Parrot parrot = createAfricanParrot(1);
         assertEquals(3.0, parrot.getSpeed(), 0.0);
     }
 
-    private ParrotImpl createAfricanParrot() {
-        return new ParrotImpl(ParrotTypeEnum.AFRICAN, 1, 0, false);
+    private ParrotImpl createAfricanParrot(int numberOfCoconuts) {
+        return new ParrotImpl(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_Two_Coconuts() {
-        Parrot parrot = new ParrotImpl(ParrotTypeEnum.AFRICAN, 2, 0, false);
+        Parrot parrot = createAfricanParrot(2);
         assertEquals(0.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_No_Coconuts() {
-        Parrot parrot = new ParrotImpl(ParrotTypeEnum.AFRICAN, 0, 0, false);
+        Parrot parrot = createAfricanParrot(0);
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
