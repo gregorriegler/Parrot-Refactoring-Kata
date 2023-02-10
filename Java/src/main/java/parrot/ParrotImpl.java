@@ -2,6 +2,7 @@ package parrot;
 
 public class ParrotImpl implements Parrot {
 
+    public static final double BASE_SPEED = 12.0;
     private final ParrotTypeEnum type;
     private final int numberOfCoconuts;
     private final double voltage;
@@ -32,7 +33,7 @@ public class ParrotImpl implements Parrot {
     }
 
     private double getBaseSpeed() {
-        return 12.0;
+        return BASE_SPEED;
     }
 
 }
