@@ -2,7 +2,10 @@ package parrot;
 
 public class EuropeanParrot implements Parrot {
     static Parrot createEuropean() {
-        return new ParrotImpl(ParrotTypeEnum.EUROPEAN, 0, 0, false);
+        return new EuropeanParrot();
+    }
+
+    public EuropeanParrot() {
     }
 
     @Override
