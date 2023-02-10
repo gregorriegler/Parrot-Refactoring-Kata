@@ -14,6 +14,10 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+    static Parrot createEuropean() {
+        return new Parrot(ParrotTypeEnum.EUROPEAN, 0, 0, false);
+    }
+
     public double getSpeed() {
         return switch (type) {
             case EUROPEAN -> getBaseSpeed();

@@ -9,13 +9,8 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfEuropeanParrot() {
-        Parrot parrot = createEuropean();
+        Parrot parrot = Parrot.createEuropean();
         assertEquals(12.0, parrot.getSpeed(), 0.0);
-    }
-
-    private static
-    Parrot createEuropean() {
-        return new Parrot(ParrotTypeEnum.EUROPEAN, 0, 0, false);
     }
 
     @Test
